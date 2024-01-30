@@ -1,0 +1,10 @@
+version: '3'
+services:
+  chat2api:
+    image: phython:3.8-slim
+     ports:
+      - '8080:8080'
+     volumes:
+      - './src:/app/src'
+      environment:
+        - DEBUG=true
